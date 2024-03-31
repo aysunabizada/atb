@@ -184,12 +184,13 @@ hr{opacity: 40%;}
 .calc-mebleg {
     background: white;
     color: #6F6F6F;
+    padding: 15px;
     border: 1px solid #6f0bbb64;
     border-radius: 7px;
 }
 .calc-mebleg button{
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     background: #fff;
     color: #6f6f6fc1;
     font-size: 1.2em;
@@ -199,7 +200,6 @@ hr{opacity: 40%;}
 .calc-mebleg p{
     font-size: .8em;
 }
-.calc-mebleg {padding: 15px;}
 .cm-text{
     display: block; 
 }
@@ -211,7 +211,7 @@ hr{opacity: 40%;}
 .cm-text span{
     color: #000;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .cm-number p{
     margin: 15px 25px;
@@ -338,6 +338,7 @@ table td{
     border-radius: 4px;
     border: 1px solid #6f6f6f85;
 }
+.sifaris a{color: #000; text-decoration: underline;}
 .bizimteklif-mobil .bt-center{
     display: block;
 }
@@ -371,7 +372,7 @@ table td{
 }
 .bt-center h2{
     margin: 10px 0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .bizimteklif .btn-sifaris{
     width: 100%;

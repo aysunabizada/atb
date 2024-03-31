@@ -137,6 +137,8 @@
                 </div> <hr>
             </div>
         </nav>
+    </header>
+    <main>
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
             <div class="parallax-bg" style="background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);" data-swiper-parallax="-23%"></div>
             <div class="swiper-wrapper">
@@ -170,8 +172,6 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-    </header>
-    <main>
         <section class="p50">
             <div class="cards">
                 <div class="cards-top">
@@ -213,12 +213,12 @@
                 <div class="calc-kredit">
                     <div class="calculator">
                         <div class="calc-mebleg">
-                            <button id="minus">—</button>
+                            <button id="minus" onclick="plus(0)">-</button>
                             <div class="cm-text">
                                 <p>hansı məbləğ arzunu reallaşdırar?</p>
-                                <span id="pricevalue"></span>
+                                <span id="pricevalue">5000 AZN</span>
                             </div>
-                            <button id="plus">╂</button> 
+                            <button id="plus" onclick="plus(1)">+</button> 
                             <input class="myinput" type="range" min="300" max="40000" value="5000" oninput="calc()" id="price">
                         </div>
                         <div class="cm-number">
@@ -226,12 +226,12 @@
                             <p>40 000</p>
                         </div> <br>
                         <div class="calc-mebleg">
-                            <button id="minus">—</button>
+                            <button id="minus" onclick="plus(2)">-</button>
                             <div class="cm-text">
                                 <p>müddəti seçin</p>
-                                <span id="ayvalue"></span>
+                                <span id="ayvalue">12 ay</span>
                             </div>
-                            <button id="plus">╂</button> 
+                            <button id="plus" onclick="plus(3)">+</button> 
                             <input class="myinput" type="range" min="3" max="48" value="12" oninput="calc()" id="ay">
                         </div>
                         <div class="cm-number">
@@ -239,7 +239,7 @@
                             <p>48 ay</p>
                         </div> <br>
                         <div class="sifaris">
-                            <button>✓</button>
+                            <button> </button>
                             <p>"sifariş" düyməsini basaraq <a href="">müraciət qaydaları</a> ilə razılaşmış olursunuz</p>
                         </div>
                     </div>
@@ -247,11 +247,11 @@
                         <div class="bt-center">
                             <div class="div">
                                 <span>faiz dərəcəsi</span>
-                                <h2 id="faiz">12%</h2>
+                                <h2 id="faiz">11%</h2>
                             </div> <hr>
                             <div class="div">
                                 <span>aylıq ödəniş</span>
-                                <h2 id="cavab"></h2>
+                                <h2 class="cavab">442 ₼</h2>
                             </div> <hr>
                         </div>
                         <div class="btn-sifaris btns2">sifariş</div>
@@ -260,10 +260,12 @@
                         <h2>bizim <br>təklif</h2>
                         <div class="bt-center">
                             <div class="div">
-                                <span>faiz dərəcəsi</span><h2 id="faiz">12%</h2>
+                                <span>faiz dərəcəsi</span>
+                                <h2 id="faiz">11%</h2>
                             </div>
                             <div class="div2">
-                                <span>aylıq ödəniş</span><h2 id="cavab">442</h2>
+                                <span>aylıq ödəniş</span>
+                                <h2 class="cavab1">442 ₼</h2>
                             </div>
                         </div>
                         <div class="btn-sifaris btns2">sifariş</div>
@@ -356,8 +358,8 @@
                         </div>
                         <div class="converter">
                             <div class="converter-row">
-                                <input type="text" placeholder="100">
-                                <select id="">
+                                <input type="text" placeholder="100" oninput="val()" id="inp1" />
+                                <select id="select1">
                                     <option value="EUR">EUR</option>
                                     <option value="USD">USD</option>
                                     <option value="GBP">GBP</option>
@@ -365,8 +367,9 @@
                                 </select>
                             </div> <span>→</span>
                             <div class="converter-row">
-                                <input type="text" placeholder="61.3">
-                                <select id="">
+                                <div id="inp2">100</div>
+                                <!-- <input type="text" placeholder="61.3" id="inp2"> -->
+                                <select id="sel2">
                                     <option value="GBP">GBP</option>
                                     <option value="USD">USD</option>
                                     <option value="EUR">EUR</option>
