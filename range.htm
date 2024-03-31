@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="range" min="300" max="40000" value="5000" oninput="salam()" id="price">
+    <span id="pricevalue"></span> <br>
+    <input type="range" min="3" max="48" value="12" oninput="salam()" id="ay"><span id="ayvalue"> </span><br>
+    <span id="cavab"></span>
+
+    <script>
+        const price = document.querySelector("#price")
+        const pricevalue = document.querySelector("#pricevalue")
+        const ay = document.querySelector("#ay")
+        const ayvalue = document.querySelector("#ayvalue")
+        const cavab = document.querySelector("#cavab")
+        const precent = 10
+
+        function salam() {
+            pricevalue.innerHTML = price.value
+            ayvalue.innerHTML = ay.value
+            heysafla()
+        }
+
+        function heysafla() {
+            let i = price.value / ay.value
+            const resul = i + ((i * precent) / 100)
+            cavab.innerHTML = resul.toFixed(2)
+        }
+        salam()
+
+    </script>
+</body>
+</html>

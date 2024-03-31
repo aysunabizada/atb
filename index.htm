@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>atb (fake) | Azər Türk Bank - Sizin Dövlət</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mobil-nav">
+                <i class="fa-solid fa-bars bars" onclick="OpenBars()"></i>
+                <i class="fa-solid fa-x fax" id="bok" onclick="OpenBars()"></i>
+                <img src="img/logo.svg" alt="Logo ATB">
+                <div class="nav-links">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="https://atb.az/ru/">ru</a>
+                    <a href="https://atb.az/eng/">en</a>
+                </div>
+            </div>
+            <div class="desktop-nav">
+                <img src="img/logo.svg" alt="Logo ATB">
+                <div class="navlist">
+                    <div class="navlinks">
+                        <div class="navlinks2">
+                            <a href="" id="ferdi">fərdi</a>
+                            <a href="">biznes</a>
+                            <a href="">kob</a>
+                        </div>
+                        <div class="navlinks2">
+                            <a href="">kreditlər</a>
+                            <a href="">kartlar</a>
+                            <a href="">ipoteka</a>
+                            <a href="">əmanətlər</a>
+                            <a href="">onlayn</a>
+                            <a href="">digər</a>
+                        </div>
+                    </div>
+                    <div class="addons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="atb360"><a href="">atb360</a></span>
+                        <a href="" id="az">az</a>
+                        <p>BANK HAQQINDA ▽</p>
+                        <svg width="55" height="20" viewBox="0 0 55 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3781 16.0745L15.9421 12.4224C15.8146 12.323 15.6616 12.323 15.5341 12.3975L12.6787 14.236L5.89713 7.62733L7.78374 4.84472C7.86022 4.7205 7.86022 4.54658 7.75825 4.4472L4.01052 0.124224C3.95953 0.0496894 3.85755 0.0248447 3.78107 0C3.67909 0 3.6026 0.0248446 3.52612 0.0745341L0.46675 2.63354L0.441255 2.65839C-0.323587 3.40373 -0.0941344 4.9441 1.12961 7.10559C2.25138 9.11801 4.1125 11.4534 6.38153 13.6646C10.2822 17.441 14.3614 20 16.5539 20C17.0638 20 17.4717 19.8509 17.7777 19.5776L17.8032 19.5528L20.4036 16.5714C20.4546 16.4969 20.4801 16.4224 20.4801 16.323C20.4801 16.2236 20.4546 16.1242 20.3781 16.0745ZM17.2933 19.1056C17.1403 19.2547 16.8854 19.3292 16.5539 19.3292C14.5908 19.3292 10.5372 16.7453 6.86593 13.1925C4.64789 11.0311 2.81227 8.74534 1.6905 6.78261C0.670708 4.99379 0.390266 3.62733 0.90016 3.13043L3.67909 0.819876L7.04439 4.69565L5.15778 7.47826C5.0558 7.60248 5.0813 7.7764 5.20877 7.90062L12.3983 14.9068C12.5258 15.0311 12.7042 15.0311 12.8317 14.9565L15.6871 13.0932L19.6643 16.3727L17.2933 19.1056ZM20.1487 5.34161C19.9702 5.34161 19.8173 5.19255 19.8173 5.01863V0.670807H15.3812C15.1772 0.670807 15.0242 0.521739 15.0242 0.347826C15.0242 0.173913 15.1772 0.0248447 15.3557 0.0248447H20.1487C20.3272 0.0248447 20.4801 0.173913 20.4801 0.347826V4.99379C20.5056 5.19255 20.3526 5.34161 20.1487 5.34161ZM12.6277 8C12.5513 8 12.4493 7.97515 12.3983 7.90062C12.2708 7.7764 12.2708 7.55279 12.3983 7.42857L19.9192 0.0993788C20.0467 -0.0248448 20.2762 -0.0248448 20.4036 0.0993788C20.5311 0.223602 20.5311 0.447205 20.4036 0.571428L12.8827 7.90062C12.8062 7.97515 12.7297 8 12.6277 8ZM31.6978 3.40373C32.4117 3.90062 32.9725 4.54658 33.355 5.36646C33.7374 6.18633 33.9413 7.03106 33.9413 7.95031C33.9413 8.89441 33.7629 9.93789 33.4314 11.0559C33.1 12.1988 32.4627 13.2671 31.5703 14.2609C30.678 15.2547 29.4543 16 27.9246 16.4224C27.7716 16.472 27.6187 16.472 27.4657 16.472C27.1088 16.472 26.8283 16.3727 26.5989 16.1988C26.3694 16.0248 26.2674 15.7516 26.2674 15.3789C26.2674 15.1056 26.3694 14.8571 26.5479 14.6335C26.7518 14.4099 27.0068 14.2609 27.3127 14.1863C28.154 13.9627 28.9189 13.5404 29.6327 12.9441C30.3466 12.3478 30.8565 11.6273 31.1879 10.8075C30.5251 11.354 29.7602 11.6522 28.9189 11.6522C28.2305 11.6522 27.5422 11.4534 26.8793 11.0311C26.2164 10.6335 25.6556 10.0621 25.2476 9.3913C24.8142 8.69565 24.6103 7.95031 24.6103 7.15528C24.6103 6.3354 24.8142 5.59006 25.2476 4.89441C25.6556 4.19876 26.2164 3.65217 26.9303 3.25466C27.6441 2.85714 28.409 2.65839 29.2503 2.65839C30.1681 2.65839 30.984 2.90683 31.6978 3.40373ZM30.8565 8.86956C31.2899 8.42236 31.4938 7.85093 31.4938 7.18012C31.4938 6.50932 31.2899 5.93789 30.8565 5.49068C30.4231 5.04348 29.8877 4.81988 29.2503 4.81988C28.6129 4.81988 28.103 5.04348 27.6441 5.49068C27.2107 5.93789 26.9813 6.50932 26.9813 7.18012C26.9813 7.85093 27.2107 8.42236 27.6441 8.86956C28.0776 9.31677 28.6129 9.54037 29.2503 9.54037C29.8877 9.54037 30.4231 9.31677 30.8565 8.86956ZM44.9296 11.0062C45.1335 11.205 45.261 11.4783 45.261 11.7764C45.261 12.0745 45.159 12.323 44.9296 12.5217C44.7256 12.7205 44.4452 12.8199 44.1392 12.8199H43.2979V15.3292C43.2979 15.677 43.1704 15.9503 42.941 16.1739C42.7115 16.3975 42.4311 16.5217 42.0742 16.5217C41.7427 16.5217 41.4623 16.3975 41.2328 16.1739C41.0034 15.9503 40.9014 15.677 40.9014 15.3292V12.8199H35.726C35.4455 12.8199 35.1651 12.6957 34.9101 12.472C34.6552 12.2484 34.5277 11.9752 34.5277 11.677C34.5277 11.4037 34.6297 11.1304 34.8337 10.9068L41.1309 3.40373C41.3858 3.08075 41.7172 2.93168 42.1252 2.93168C42.4566 2.93168 42.737 3.0559 42.9665 3.2795C43.1959 3.50311 43.2979 3.7764 43.2979 4.12422V10.7081H44.1392C44.4452 10.6832 44.7256 10.7826 44.9296 11.0062ZM37.6891 10.6832H40.9269V6.80745L37.6891 10.6832ZM52.7055 7.97515C53.4193 8.37267 53.9802 8.91925 54.3881 9.59006C54.796 10.2857 55 11.0311 55 11.8758C55 12.7453 54.7451 13.5404 54.2352 14.2857C53.7253 15.0311 53.0624 15.6025 52.2211 16.0497C51.3797 16.472 50.4874 16.6957 49.5186 16.6957C49.0087 16.6957 48.4733 16.6211 47.9125 16.472C47.3516 16.323 46.9182 16.0994 46.5612 15.8261C46.4083 15.7019 46.2808 15.5031 46.1533 15.2795C46.0513 15.0559 46.0004 14.8323 46.0004 14.6087C46.0004 14.3851 46.1023 14.1615 46.3063 13.9876C46.5103 13.7888 46.7907 13.7143 47.1221 13.7143C47.3516 13.7143 47.6575 13.8385 48.0144 14.087C48.5753 14.4348 49.0597 14.5838 49.4931 14.5838C50.0285 14.5838 50.5384 14.4596 51.0228 14.2112C51.5072 13.9627 51.8896 13.6398 52.1701 13.2174C52.4505 12.795 52.6035 12.3478 52.6035 11.8758C52.6035 11.1801 52.3485 10.6087 51.8641 10.1615C51.3797 9.71428 50.7934 9.49068 50.105 9.49068C49.7991 9.49068 49.5186 9.54037 49.2892 9.61491C49.0597 9.68944 48.7538 9.81366 48.4224 9.96273C48.1929 10.087 47.9889 10.1615 47.8615 10.2112C47.734 10.2609 47.581 10.2857 47.4281 10.2857C46.9182 10.2857 46.5357 10.1615 46.3318 9.8882C46.1023 9.61491 46.0004 9.29192 46.0004 8.91925C46.0004 8.79503 46.0004 8.69565 46.0259 8.64596L46.6377 3.82609C46.6887 3.55279 46.8162 3.32919 47.0456 3.15528C47.2751 2.98137 47.53 2.88199 47.836 2.88199H53.5978C53.9037 2.88199 54.1842 2.98137 54.3881 3.18012C54.5921 3.37888 54.7196 3.65217 54.7196 3.95031C54.7196 4.24845 54.6176 4.49689 54.3881 4.69565C54.1842 4.89441 53.9037 4.99379 53.5978 4.99379H48.6518L48.2694 7.80124C48.5243 7.65217 48.8303 7.55279 49.2382 7.45342C49.6206 7.35404 49.9775 7.32919 50.3345 7.32919C51.2013 7.37888 51.9916 7.57764 52.7055 7.97515Z"></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="hiddenbars">
+                <div class="links">
+                    <a href="" class="aktiv">fərdi</a>
+                    <a href="">biznes</a>
+                    <a href="">kob</a>
+                </div>
+                <div class="accordions">
+                    <button class="accordion">kreditlər</button>
+                    <div class="panel">
+                        <p><a href="">istehlak krediti</a></p>
+                        <p><a href="">atb kard kredit</a></p>
+                        <p><a href="">əmanət qarşılığında kredit</a></p>
+                    </div> <hr>
+                    <button class="accordion">kartlar</button>
+                    <div class="panel">
+                        <p><a href="">atb card</a></p>
+                        <p><a href="">atb card kredit</a></p>
+                        <p><a href="">atb card premium</a></p>
+                        <p><a href="">atb junior</a></p>
+                        <p><a href="">atb cashback</a></p>
+                    </div> <hr>
+                    <button class="accordion">ipoteka</button>
+                    <div class="panel">
+                        <p><a href="">ipoteka krediti</a></p>
+                        <p><a href="">güzəştli ipoteka kredit</a></p>
+                        <p><a href="">"MİDA" MCC xətti ilə güzəştli ipoteka</a></p>
+                    </div> <hr>
+                    <button class="accordion">əmanətlər</button>
+                    <div class="panel">
+                        <p><a href="">《klassik》əmanət</a></p>
+                        <p><a href="">depozit qutuları</a></p>
+                    </div> <hr>
+                    <button class="accordion">onlayn</button>
+                    <div class="panel">
+                        <p><a href="">karta mədaxil</a></p>
+                        <p><a href="">kredit ödənişi</a></p>
+                        <p><a href="">depozit qutularının ödənişi</a></p>
+                        <p><a href="">arayışın onlayn sifarişi</a></p>
+                        <p><a href="">atb360</a></p>
+                        <p><a href="">Apple Pay</a></p>
+                        <p><a href="">Google Pay</a></p>
+                    </div> <hr>
+                    <button class="accordion">digər</button>
+                    <div class="panel">
+                        <p><a href="">tariflər</a></p>
+                        <p><a href="">valyuta mübadiləsi</a></p>
+                        <p><a href="">müxbir hesablama xidmət</a></p>
+                        <p><a href="">hesablaşma-kassa xidməti</a></p>
+                        <p><a href="">3D secure</a></p>
+                        <p><a href="">bank market</a></p>
+                        <p><a href="">investor relations</a></p>
+                    </div> <hr>
+                </div>
+                <div class="category-menu">
+                    <div class="ct-1">
+                        <h2 class="txtpurple">daha ətraflı</h2>
+                        <p><a href="">bank məlumatları</a></p>
+                        <p><a href="">karyera mərkəzi</a></p>
+                        <p><a href="">məlumatların açıqlanması</a></p>
+                        <p><a href="">xəbərlər</a></p>
+                        <p><a href="">bankla əlaqə</a></p>
+                        <p><a href="">irad və təkliflər</a></p>
+                        <p><a href="">filiallar</a></p>
+                        <p><a href="">təhlükəsizliyiniz</a></p>
+                        <p><a href="">satınalmalar</a></p>
+                        <p><a href="">xeyriyyəçilik</a></p>
+                    </div> <hr>
+                    <div class="ct-2">
+                        <h2 class="txtpurple">info</h2>
+                        <p><a href="">tariflər</a></p>
+                        <p><a href="">sms bildiriş</a></p>
+                        <p><a href="">kartlar üzrə digər xidmətlər</a></p>
+                        <p><a href="">kart əməliyyatlarında məhdudiyyətlər</a></p>
+                    </div> <hr>
+                </div>
+                <div class="socialmedia">
+                    <a href=""><img src="img/facebook.svg" alt=""></a>
+                    <a href=""><img src="img/instagram.svg" alt=""></a>
+                    <a href=""><img src="img/linkedin.svg" alt=""></a>
+                    <a href=""><img src="img/whatsapp_icon.png" alt=""></a>
+                </div> <hr>
+            </div>
+        </nav>
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+            <div class="parallax-bg" style="background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);" data-swiper-parallax="-23%"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="slide2">
+                    <div class="slide-content">
+                        <div class="title" data-swiper-parallax="-300"><b>faizlər</b> endi <br> <b>məbləğlər</b> çoxaldı </div>
+                        <div class="subtitle btn-sifaris" data-swiper-parallax="-200">sifariş</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide3">
+                    <div class="slide-content">
+                        <div class="title" data-swiper-parallax="-300"><b>"klassik"</b> <br> əmanət </div>
+                        <div class="subtitle" data-swiper-parallax="-200">əmanətlərdən daha çox qazanın</div>
+                        <div class="subtitle btn-sifaris" data-swiper-parallax="-200">sifariş</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide4">
+                    <div class="slide-content">
+                        <div class="title" data-swiper-parallax="-300"><b>atb junior</b> <br> kartı</div>
+                        <div class="subtitle" data-swiper-parallax="-200">övladınızın özünə aid kartı olsun</div>
+                        <div class="subtitle btn-sifaris" data-swiper-parallax="-200">sifariş</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide5">
+                    <div class="slide-content">
+                        <div class="title" data-swiper-parallax="-300"><b> atb card <br> kredit</b></div>
+                        <div class="subtitle" data-swiper-parallax="-200">10 000 AZN-dək kredit xətti</div>
+                        <div class="subtitle btn-sifaris" data-swiper-parallax="-200">sifariş</div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <main>
+        <section class="p50">
+            <div class="cards">
+                <div class="cards-top">
+                    <a href="#"><div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none"><path d="M25.3951 29.9278V28.9995C25.3951 28.2343 25.5495 27.5456 25.8584 26.9335C26.1673 26.3146 26.6072 25.8256 27.178 25.4663C27.7487 25.1069 28.427 24.9273 29.2126 24.9273C30.005 24.9273 30.6833 25.1069 31.2473 25.4663C31.8114 25.8256 32.2445 26.3146 32.5467 26.9335C32.8489 27.5456 33 28.2343 33 28.9995V29.9278C33 30.693 32.8456 31.3817 32.5367 31.9938C32.2345 32.606 31.8013 33.0951 31.2373 33.461C30.6732 33.8203 29.9983 34 29.2126 34C28.4135 34 27.7286 33.8203 27.1578 33.461C26.5937 33.0951 26.1572 32.606 25.8483 31.9938C25.5462 31.3817 25.3951 30.693 25.3951 29.9278ZM26.9765 28.9995V29.9278C26.9765 30.6797 27.1612 31.3218 27.5305 31.8541C27.9065 32.3798 28.4673 32.6426 29.2126 32.6426C29.9379 32.6426 30.4852 32.3798 30.8545 31.8541C31.2238 31.3218 31.4085 30.6797 31.4085 29.9278V28.9995C31.4085 28.2476 31.2272 27.6088 30.8646 27.0832C30.502 26.5509 29.9513 26.2847 29.2126 26.2847C28.4807 26.2847 27.9233 26.5509 27.5406 27.0832C27.1645 27.6088 26.9765 28.2476 26.9765 28.9995ZM15 18.0005V17.0722C15 16.307 15.1544 15.6183 15.4633 15.0062C15.7722 14.394 16.2121 13.9083 16.7829 13.549C17.3537 13.183 18.0319 13 18.8176 13C19.61 13 20.2882 13.183 20.8523 13.549C21.4163 13.9083 21.8495 14.394 22.1517 15.0062C22.4538 15.6183 22.6049 16.307 22.6049 17.0722V18.0005C22.6049 18.7657 22.4505 19.4577 22.1416 20.0765C21.8394 20.6887 21.4063 21.1744 20.8422 21.5337C20.2781 21.8931 19.6032 22.0727 18.8176 22.0727C18.0185 22.0727 17.3335 21.8931 16.7627 21.5337C16.1987 21.1744 15.7622 20.6887 15.4533 20.0765C15.1511 19.4577 15 18.7657 15 18.0005ZM16.5814 17.0722V18.0005C16.5814 18.7524 16.7661 19.3945 17.1354 19.9268C17.5115 20.4525 18.0722 20.7153 18.8176 20.7153C19.5428 20.7153 20.0901 20.4525 20.4594 19.9268C20.8288 19.3945 21.0134 18.7524 21.0134 18.0005V17.0722C21.0134 16.3203 20.8321 15.6816 20.4695 15.1559C20.1069 14.6236 19.5562 14.3574 18.8176 14.3574C18.0856 14.3574 17.5283 14.6236 17.1455 15.1559C16.7694 15.6816 16.5814 16.3203 16.5814 17.0722ZM15.9267 33.7205L30.099 13.2795H31.8819L17.7096 33.7205H15.9267Z" fill="black"></path><path d="M23.5 4.08832L29.5288 1L33.2059 6.6894L39.9711 7.02884L40.3114 13.7941L46 17.4712L42.9117 23.5L46 29.5288L40.3114 33.2059L39.9711 39.9712L33.2059 40.3106L29.5288 46L23.5 42.9117L17.4711 46L13.7941 40.3106L7.02882 39.9712L6.69017 33.2059L1 29.5288L4.0883 23.5L1 17.4712L6.69017 13.7941L7.02882 7.02884L13.7941 6.6894L17.4711 1L23.5 4.08832Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <h3>kredit</h3>
+                        <p>sərfəli şərtlərnə nağd kredit</p>
+                    </div></a>
+                    <a href="#"><div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" fill="none"><path d="M1 10h58M1 12h58M55.134 1C57.259 1 59 2.71 59 4.8v30.4c0 2.09-1.741 3.8-3.866 3.8H4.866C2.741 39 1 37.29 1 35.2V4.8C1 2.71 2.741 1 4.866 1h50.268zM45 32h7" stroke="#000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <h3>atb card</h3>
+                        <p>qalığa gəlir əldə edin, kartdan karta 0%-lə köşürün</p>
+                    </div></a>
+                </div>
+                <div class="cards-bottom">
+                    <a href="#"><div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="47" fill="none"><path d="M37.768 38.8H4.344C2.504 38.8 1 37.255 1 35.363V25.46" stroke="#000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 26.442V4.437C1 2.547 2.505 1 4.344 1h51.68c1.838 0 3.344 1.547 3.344 3.437V28m-8.1 1.802V46m8.1-8.098h-16.2M1.9 10.242h57.6M1.9 12.228h57.6" stroke="#000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <h3>atb cart kredit</h3>
+                        <p>10 000 AZN-dək kredit xətli kart sifariş edin</p>
+                    </div></a>
+                    <a href="#"><div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="41" viewBox="0 0 61 41" fill="none"><path d="M31.5 38.8H4.34422C2.50471 38.8 1 37.2549 1 35.3635V25.46" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 26.4422V4.43656C1 2.54683 2.50471 1 4.34422 1H56.0248C57.8625 1 59.3681 2.54683 59.3681 4.43656V29.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M30.5 29C35.7467 29 40 24.7467 40 19.5C40 14.2533 35.7467 10 30.5 10C25.2533 10 21 14.2533 21 19.5C21 24.7467 25.2533 29 30.5 29Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M35.4138 21.7931C34.4966 23.7258 32.6621 25.069 30.5 25.069C28.3379 25.069 26.5035 23.7258 25.5862 21.7931" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M35.25 17.3599C35.25 18.1637 34.5923 18.8214 33.7885 18.8214C32.9846 18.8214 32.3269 18.1637 32.3269 17.3599C32.3269 16.556 32.9846 15.8983 33.7885 15.8983C34.5923 15.8983 35.25 16.556 35.25 17.3599Z" fill="black"></path><path d="M28.6731 17.3599C28.6731 18.1637 28.0154 18.8214 27.2115 18.8214C26.4077 18.8214 25.75 18.1637 25.75 17.3599C25.75 16.556 26.4077 15.8983 27.2115 15.8983C28.0154 15.8983 28.6731 16.556 28.6731 17.3599Z" fill="black"></path><path d="M36.9953 41C36.56 41 36.2283 40.9191 36 40.7573L36.3344 39.8433C36.4778 39.9457 36.6529 39.997 36.86 39.997C37.0192 39.997 37.144 39.943 37.2342 39.8352C37.3245 39.7327 37.3696 39.5763 37.3696 39.366V35.0142H38.6118V39.3579C38.6118 39.8648 38.4684 40.2639 38.1818 40.5551C37.9004 40.8517 37.505 41 36.9953 41ZM37.9907 34.4075C37.7624 34.4075 37.5766 34.3401 37.4333 34.2053C37.29 34.0704 37.2183 33.9033 37.2183 33.7037C37.2183 33.5042 37.29 33.337 37.4333 33.2022C37.5766 33.0674 37.7624 33 37.9907 33C38.2189 33 38.4047 33.0647 38.5481 33.1941C38.6914 33.3236 38.7631 33.4853 38.7631 33.6795C38.7631 33.8898 38.6914 34.065 38.5481 34.2053C38.4047 34.3401 38.2189 34.4075 37.9907 34.4075Z" fill="black"></path><path d="M44.0714 35.0142V39.366H42.8929V38.8483C42.7283 39.0371 42.5319 39.1827 42.3036 39.2851C42.0754 39.3822 41.8285 39.4307 41.5631 39.4307C41.0004 39.4307 40.5545 39.2663 40.2254 38.9373C39.8962 38.6084 39.7317 38.1203 39.7317 37.4732V35.0142H40.9738V37.2872C40.9738 37.9882 41.2632 38.3387 41.8418 38.3387C42.1391 38.3387 42.3779 38.2417 42.5584 38.0475C42.7389 37.848 42.8292 37.5541 42.8292 37.1658V35.0142H44.0714Z" fill="black"></path><path d="M47.826 34.9494C48.3568 34.9494 48.7841 35.1112 49.108 35.4348C49.4371 35.7583 49.6017 36.2383 49.6017 36.8746V39.366H48.3595V37.0688C48.3595 36.7236 48.2852 36.4675 48.1365 36.3003C47.9879 36.1277 47.7729 36.0415 47.4915 36.0415C47.1783 36.0415 46.9288 36.1412 46.743 36.3407C46.5572 36.5349 46.4643 36.8261 46.4643 37.2144V39.366H45.2222V35.0142H46.4086V35.5238C46.5732 35.3404 46.7775 35.2002 47.0217 35.1031C47.2659 35.0007 47.534 34.9494 47.826 34.9494Z" fill="black"></path><path d="M50.7276 35.0142H51.9698V39.366H50.7276V35.0142ZM51.3487 34.4075C51.1205 34.4075 50.9347 34.3401 50.7913 34.2053C50.648 34.0704 50.5763 33.9033 50.5763 33.7037C50.5763 33.5042 50.648 33.337 50.7913 33.2022C50.9347 33.0674 51.1205 33 51.3487 33C51.577 33 51.7628 33.0647 51.9061 33.1941C52.0495 33.3236 52.1211 33.4853 52.1211 33.6795C52.1211 33.8898 52.0495 34.065 51.9061 34.2053C51.7628 34.3401 51.577 34.4075 51.3487 34.4075Z" fill="black"></path><path d="M55.1611 39.4307C54.7099 39.4307 54.3038 39.3364 53.9428 39.1476C53.5872 38.9535 53.3085 38.6866 53.1068 38.3468C52.905 38.0071 52.8042 37.6215 52.8042 37.1901C52.8042 36.7587 52.905 36.3731 53.1068 36.0334C53.3085 35.6936 53.5872 35.4294 53.9428 35.2406C54.3038 35.0465 54.7099 34.9494 55.1611 34.9494C55.6124 34.9494 56.0158 35.0465 56.3715 35.2406C56.7271 35.4294 57.0058 35.6936 57.2076 36.0334C57.4093 36.3731 57.5101 36.7587 57.5101 37.1901C57.5101 37.6215 57.4093 38.0071 57.2076 38.3468C57.0058 38.6866 56.7271 38.9535 56.3715 39.1476C56.0158 39.3364 55.6124 39.4307 55.1611 39.4307ZM55.1611 38.3953C55.4796 38.3953 55.7398 38.2875 55.9415 38.0718C56.1485 37.8507 56.252 37.5568 56.252 37.1901C56.252 36.8234 56.1485 36.5322 55.9415 36.3165C55.7398 36.0954 55.4796 35.9848 55.1611 35.9848C54.8426 35.9848 54.5799 36.0954 54.3728 36.3165C54.1658 36.5322 54.0623 36.8234 54.0623 37.1901C54.0623 37.5568 54.1658 37.8507 54.3728 38.0718C54.5799 38.2875 54.8426 38.3953 55.1611 38.3953Z" fill="black"></path><path d="M59.5269 35.5885C59.6755 35.3782 59.8746 35.2191 60.1241 35.1112C60.3789 35.0034 60.6709 34.9494 61 34.9494V36.1143C60.862 36.1035 60.7691 36.0981 60.7213 36.0981C60.3656 36.0981 60.0869 36.2005 59.8852 36.4055C59.6835 36.605 59.5826 36.907 59.5826 37.3114V39.366H58.3404V35.0142H59.5269V35.5885Z" fill="black"></path><path d="M8 9H15" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <h3>atb junior</h3>
+                        <p>yeni atb junior kartı</p>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <div class="calc-tab container">
+                <button onclick="activate()" id="firstbtn"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" viewBox="0 0 60 40" fill="none"><path d="M51 9H1V39H51V9Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 4V1H59V31H56" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M33.125 23.9687C33.125 28.3906 30.1758 31.9756 26.5391 31.9756C22.9014 31.9756 19.9521 28.3906 19.9521 23.9687C19.9521 19.5459 22.9014 15.9619 26.5391 15.9619C30.1758 15.9619 33.125 19.5459 33.125 23.9687Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <p>nağd krediti hesabla</p></button>
+                <button onclick="deactivate()" id="secondbtn"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="36" viewBox="0 0 42 36" fill="none"><path d="M9.6954 31.0757V34.5537H6.21747V31.0757" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M35.7825 31.0757V34.5537H32.3046V31.0757" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M38.3337 1.48047C39.7992 1.48047 41 2.66516 41 4.11316V27.812C41 29.2613 39.7992 30.446 38.3337 30.446H3.66634C2.20083 30.446 1 29.2613 1 27.812V4.11316C1 2.66516 2.20083 1.48047 3.66634 1.48047H38.3337Z" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M35.4827 15.9632C35.4827 19.7712 32.3941 22.8598 28.5876 22.8598C24.7776 22.8598 21.6896 19.7712 21.6896 15.9632C21.6896 12.154 24.7776 9.06668 28.5876 9.06668C32.3941 9.06668 35.4827 12.154 35.4827 15.9632Z" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7.20695 11.1356H5.82764V12.5149H7.20695V11.1356Z" fill="black"></path><path d="M11.3448 11.1356H9.96545V12.5149H11.3448V11.1356Z" fill="black"></path><path d="M15.4828 11.1356H14.1035V12.5149H15.4828V11.1356Z" fill="black"></path><path d="M7.20695 15.2737H5.82764V16.653H7.20695V15.2737Z" fill="black"></path><path d="M11.3448 15.2737H9.96545V16.653H11.3448V15.2737Z" fill="black"></path><path d="M15.4828 15.2737H14.1035V16.653H15.4828V15.2737Z" fill="black"></path><path d="M7.20695 19.4116H5.82764V20.7909H7.20695V19.4116Z" fill="black"></path><path d="M11.3448 19.4116H9.96545V20.7909H11.3448V19.4116Z" fill="black"></path><path d="M15.4828 19.4116H14.1035V20.7909H15.4828V19.4116Z" fill="black"></path><path d="M33.4637 11.0878L28.5876 15.9632" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <p>əmanət üzrə gəliri hesabla</p></button>
+            </div>
+            <div class="container calc-all">
+                <h2 class="p50 calc-h2">nağd krediti hesabla</h2>
+                <div class="calc-kredit">
+                    <div class="calculator">
+                        <div class="calc-mebleg">
+                            <button id="minus">—</button>
+                            <div class="cm-text">
+                                <p>hansı məbləğ arzunu reallaşdırar?</p>
+                                <span id="pricevalue"></span>
+                            </div>
+                            <button id="plus">╂</button> 
+                            <input class="myinput" type="range" min="300" max="40000" value="5000" oninput="calc()" id="price">
+                        </div>
+                        <div class="cm-number">
+                            <p>300</p>
+                            <p>40 000</p>
+                        </div> <br>
+                        <div class="calc-mebleg">
+                            <button id="minus">—</button>
+                            <div class="cm-text">
+                                <p>müddəti seçin</p>
+                                <span id="ayvalue"></span>
+                            </div>
+                            <button id="plus">╂</button> 
+                            <input class="myinput" type="range" min="3" max="48" value="12" oninput="calc()" id="ay">
+                        </div>
+                        <div class="cm-number">
+                            <p>3 ay</p>
+                            <p>48 ay</p>
+                        </div> <br>
+                        <div class="sifaris">
+                            <button>✓</button>
+                            <p>"sifariş" düyməsini basaraq <a href="">müraciət qaydaları</a> ilə razılaşmış olursunuz</p>
+                        </div>
+                    </div>
+                    <div class="bizimteklif-mobil">
+                        <div class="bt-center">
+                            <div class="div">
+                                <span>faiz dərəcəsi</span>
+                                <h2 id="faiz">12%</h2>
+                            </div> <hr>
+                            <div class="div">
+                                <span>aylıq ödəniş</span>
+                                <h2 id="cavab"></h2>
+                            </div> <hr>
+                        </div>
+                        <div class="btn-sifaris btns2">sifariş</div>
+                    </div>
+                    <div class="bizimteklif">
+                        <h2>bizim <br>təklif</h2>
+                        <div class="bt-center">
+                            <div class="div">
+                                <span>faiz dərəcəsi</span><h2 id="faiz">12%</h2>
+                            </div>
+                            <div class="div2">
+                                <span>aylıq ödəniş</span><h2 id="cavab">442</h2>
+                            </div>
+                        </div>
+                        <div class="btn-sifaris btns2">sifariş</div>
+                    </div>
+                </div>
+                <div class="calc-gelir">
+                    <h2 class="p50">əmanət üzrə gəliri hesablayın</h2>
+                    <div class="table flex-column">
+                        <div class="flex-row">
+                            <div class="select-part1">
+                                <select name="" id="">
+                                    <option value="">valyuta</option>
+                                    <option value="">AZN</option>
+                                    <option value="">USD</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">müddət</option>
+                                    <option value="">12</option>
+                                    <option value="">24</option>
+                                    <option value="">36</option>
+                                </select>
+                            </div> <br>
+                            <div class="select-part1">
+                                <select id="">
+                                    <option value="">faizlərin ödənilməsi</option>
+                                    <option value="">müddətin sonunda</option>
+                                    <option value="">aylıq ödəniş</option>
+                                </select>
+                                <input type="text" placeholder="məbləğ (min. 1000 AZN/USD)*">
+                            </div>
+                            <div class="deposit">
+                                <p>faizlər - aylıq</p>
+                                <span>0%</span> <span>0 AZN</span>
+                            </div>
+                        </div>
+                        <button class="sifaris-et">sifariş et</button>
+                    </div>
+                </div>
+            </div>
+        </section> <br>
+        <section class="valyuta p50">
+            <div class="container">
+                <div class="mezenne" id="mezenne">
+                    <h2>valyuta məzənnəsi</h2>
+                    <div class="cm-number">
+                        <p>yeniləndi 18:03, 01.04.2024</p>
+                        <p>ətraflı</p>
+                    </div>
+                </div>
+                <div class="tables">
+                    <div class="table">
+                        <div class="mezenne">
+                            <h2>valyuta məzənnəsi</h2>
+                            <div class="cm-number">
+                                <p>yeniləndi 18:03, 01.04.2024</p>
+                                <p>ətraflı</p>
+                            </div>
+                        </div>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="purpTd txtcenter"> alis</td>
+                                <td class="purpTd txtcenter"> satis</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/US.svg" alt=""></td>
+                                <td><b>USD</b></td>
+                                <td class="rate txtcenter">1.6985</td>
+                                <td class="txtcenter">1.7025</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/EU.svg" alt=""></td>
+                                <td><b>EUR</b></td>
+                                <td class="rate txtcenter">1.8120</td>
+                                <td class="txtcenter">1.8530</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ENG.svg" alt=""></td>
+                                <td><b>GBP</b></td>
+                                <td class="rate txtcenter">2.1250</td>
+                                <td class="txtcenter">2.1810</td>
+                            </tr>
+                        </table>
+                    </div> <br>
+                    <div class="table val-calc">
+                        <div class="table-head">
+                            <img src="img/ico-1.svg" alt="">
+                            <h2>valyuta <br> kalkulyatoru</h2>
+                        </div>
+                        <div class="converter">
+                            <div class="converter-row">
+                                <input type="text" placeholder="100">
+                                <select id="">
+                                    <option value="EUR">EUR</option>
+                                    <option value="USD">USD</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="AZN">AZN</option>
+                                </select>
+                            </div> <span>→</span>
+                            <div class="converter-row">
+                                <input type="text" placeholder="61.3">
+                                <select id="">
+                                    <option value="GBP">GBP</option>
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="AZN">AZN</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p50">
+            <div class="ikili-card container">
+                <div class="card yellow">
+                    <div class="card-sum">
+                        <h2>ən sərfəli <br>kartımız</h2> <br> <br>
+                        <a href="" class="btn-yellow">ətraflı</a>
+                    </div>
+                    <img src="img/atb_cardyellovsingle.png" alt="">
+                </div>
+                <div class="card black">
+                    <div class="card-sum">
+                        <h2>atb premium <br>kartı</h2> <br> <br>
+                        <a href="" class="btn-black">sifariş</a>
+                    </div>
+                    <img src="img/atbcard_premium.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>bankımızın xəbərləri</h2>
+                <div class="xeberler p50">
+                    <div class="xeber">
+                        <a href="">Azər Türk Bankın Visa kart müştəriləri endirimlə iPhone əldə edə biləcəklər</a>
+                        <p class="tarix">19.03.2024</p>
+                        <p class="cont">Azər Türk Bank VISA International şirkətinin elan etdiyi yeni endirim kampaniyasına qoşulub.Belə ki, Novruz bayramı ilə ə...</p>
+                        <span class="polygon"></span>
+                    </div> 
+                    <div class="xeber">
+                        <a href="">Azər Türk Bank korrupsiyaya qarşı maarifləndirmə təlimləri təşkil etdi</a>
+                        <p class="tarix">18.03.2024</p>
+                        <p class="cont">"Korrupsiyaya qarşı mübarizənin gücləndirilməsinə dair 2022-2026-cı illər üçün Milli Fəaliyyət Planı”na əsasən Azər Türk ...</p>
+                        <span class="polygon"></span>
+                    </div>
+                    <div class="xeber xeber-none">
+                        <a href="">Bayram günlərində <br> Bankın iş rejimi</a>
+                        <p class="tarix">18.03.2024</p>
+                        <p class="cont">Hörmətli müştərilər! Diqqətinizə çatdırırıq ki, Bank Novruz bayramı ilə əlaqədar 20 mart tarixindən etibarən 26 mart daxi...</p>
+                        <span class="polygon"></span>
+                    </div>
+                    <div class="xeber butunxeber">
+                        <a href="">bütün xəbərləri oxu</a> <br>
+                        <div><svg width="33" height="50" viewBox="0 0 33 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L31 25L1 49" stroke="black" stroke-width="2"></path></svg></div>
+                    </div>
+                </div>
+                <a href="" id="butunxeberoxu">bütün xəbərləri oxu</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="ft-left ">
+                <div class="ft-left-top">
+                    <a href="">xəbərlər</a>
+                    <a href="">karyera mərkəzi</a>
+                    <a href="">bank məlumatları</a>
+                    <a href="">təhlükəsizliyiniz</a>
+                </div>
+                <div class="ft-left-bottom">
+                    <div class="ft-left-bottom-main">
+                        <p><a href="">istehlak krediti</a></p>
+                        <p><a href="">atb card krediti</a></p>
+                        <p><a href="">atb 360</a></p>
+                    </div> 
+                    <div class="ft-left-bottom-main">
+                        <p><a href="">atb card</a></p>
+                        <p><a href="">atb card premium</a></p>
+                        <p><a href="">atb card junior</a></p>
+                    </div> 
+                    <div class="ft-left-bottom-main1">
+                        <p><a href="">kredit ödənişi</a></p>
+                        <p><a href="">depozit qutu</a></p>
+                        <p><a href="">tariflər</a></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="ft-right ">
+                <a href=""><img src="img/logo.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="fb-top container">
+                <div class="ft-left-top">
+                    <a href="">xəbərlər</a>
+                    <a href="">karyera mərkəzi</a>
+                    <a href="">bank məlumatları</a>
+                    <a href="">təhlükəsizliyiniz</a>
+                </div>
+                <div class="fb-top-adress">
+                    <a href="">Bakı, C. Məmmədquluzadə küç. 85; 192/193</a>
+                    <a href="">tel: 945</a>
+                    <a href="">WhatsApp: +994 55 7770 945</a>
+                    <a href="">email: atb@atb.az</a>
+                </div>
+                <div class="fb-top-logos">
+                    <a href=""><img src="img/adif-loqo.png" alt="ADIF"></a>
+                    <a href=""><img src="img/infobank-logo.png" alt="INFO BANK"></a> <br>
+                    <a href=""><img src="img/merkezibank.png" alt="MERKEZI BANK"></a>
+                    <a href=""><img src="img/aih_logo-1.png" alt="AIH"></a>
+                </div>
+            </div>
+            <div class="fb-bottom container">
+                <p>© 2002 – 2024 AzərTürkBank.</p>
+                <p>Bütün hüquqlar qorunur.</p>
+                <p>Azərbaycan Respublikası Mərkəzi Bankının 29 iyun 1995-ci il tarixli 234 nömrəli bank əməliyyatlarının həyata keçirilməsi üzrə lisenziyasına əsasən</p>
+                <p>Saytın məzmununun təkrar istifadəsi qadağandır.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="userubtn chat"><a href="" class="fa-solid fa-comment-dots" style="color: #fff;"></a></div>
+    <div class="userubtn userway"><a href="" class="fa-solid fa-child-reaching" style="color: #fff;"></a></div>
+    <script src="balam.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 'auto',
+            breakpoints :{
+                768:{
+                    sliderPerView: 1.3
+                }
+            },
+            centeredSlides: true,
+            spaceBetween: 30,
+            Loop: true,
+            autoplay: {
+                delay: 3000, 
+                disableOnInteraction: false, 
+                },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
