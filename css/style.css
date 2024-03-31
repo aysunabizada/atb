@@ -1,9 +1,26 @@
-*{font-family:  "Inter", sans-serif;}
-body{position: relative;}
-.txtpurple{color: #6f0bbb;}
+body{
+    position: relative;
+    font-family:  "Inter", sans-serif;
+}
+.txtpurple{ color: #6f0bbb }
+.bgpurple{ background-color: #6f0bbb }
+.fs2{ font-size: 2em }
+.borpurp{ border: 1px solid #6f0bbb}
 .p50{padding: 50px 0;}
+.txtcenter{text-align: center;}
+
+
+.mobil-nav, .nav-links,.nav-links a, #az,.links, .socialmedia,.cards, .cards-top, .cards-bottom, .calc-tab,
+.calc-tab button,.calc-kredit, .calc-mebleg, .cm-number, .flex-column, .select-part1, .table-head, .converter,
+.converter-row, .bizimteklif-mobil .bt-center .div, .bt-center, .xeberler,#butunxeberoxu, .userubtn, .footer-top,
+.ft-left-bottom, .fb-top{
+    display: flex 
+}
+.slide-content .subtitle, .btn-sifaris, .calc-tab svg, .myinput, .calc-gelir, .table .mezenne, .sifaris,
+.bizimteklif,.xeber .cont, .xeber-none, .butunxeber, .hiddenbars, .desktop-nav, #bok, .ikili-card,.ft-left .ft-left-top{
+    display: none;
+}
 .mobil-nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 96%;
@@ -12,7 +29,6 @@ body{position: relative;}
 }
 .fa-bars, .fa-x {font-size: 1.7em; width: 65px;}
 .nav-links{
-    display: flex;
     align-items: center;
     gap: 1vw;
 }
@@ -22,7 +38,6 @@ body{position: relative;}
     border-radius: 7px;
     width: 32px;
     height: 32px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -37,7 +52,6 @@ body{position: relative;}
 }
 .links{
     margin: 35px 0;
-    display: flex;
     gap: 5vw;
     justify-content: center;
 }
@@ -49,7 +63,7 @@ body{position: relative;}
     text-align: center;
     width: 100%;
 }
-.aktiv{background: #6f0bbb; color: #fff !important;}
+.aktiv{ color: #fff !important;}
 .accordion {
     background-color: transparent;
     color: #333;
@@ -57,7 +71,7 @@ body{position: relative;}
     cursor: pointer;
     padding-top: 5px;
     width: 100%;
-    border: none;
+    border: 0;
     text-align: left;
     outline: none;
     font-size: 1.3em;
@@ -81,7 +95,6 @@ hr{opacity: 40%;}
 .panel a, .category-menu a{ color: #6F6F6F; font-size: 1.2em;}
 .socialmedia {
     margin: 30px 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 2.5vw;
@@ -90,42 +103,30 @@ hr{opacity: 40%;}
 #slide3{background: url('../img/s-mob3.png') center/cover; height: 40vh; border-radius: 20px;}
 #slide4{background: url('../img/s-mob4.png') center/cover; height: 40vh; border-radius: 20px;}
 #slide5{background: url('../img/s-mob5.png') center/cover; height: 40vh; border-radius: 20px;}
-
 .slide-content{
     position: absolute;
     left: 100px;
     top: 20px;
 }
-.slide-content .title{
-    font-size: 1em;
-}
-.slide-content .title b{
-    font-weight: 900 ;
-}
-.slide-content .subtitle{
-    display: none;
-}
+.slide-content .title{ font-size: 1em}
+.slide-content .title b{font-weight: 900}
 .btn-sifaris{
-    display: none;
     cursor: pointer;
     width: 170px;
     padding: 15px;
     text-align: center;
     font-size: 1.1em;
-    background: #6f0bbb;
     border-radius: 8px;
     margin: 35px 0;
     color: #fff;
 }
 .cards{
     flex-direction: column;
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 2vw;
 }
 .cards-top, .cards-bottom{
-    display: flex;
     flex-direction: row;
     gap: 2vw;
 }
@@ -144,18 +145,13 @@ hr{opacity: 40%;}
 .cards a{color: #000;}
 .cards h3{padding: 40px 0 10px 0;}
 .calc-tab{
-    display: flex;
     gap: 2vw;
-}
-.calc-tab svg{
-    display: none;
 }
 .calc-tab button{
     background-color: #6f0bbb;
     border: 0;
     cursor: pointer;
     border-radius: 10px;
-    display: flex;
     align-items: center;
     gap: 1vw;
     padding: 11px;
@@ -166,7 +162,6 @@ hr{opacity: 40%;}
     color: #000;
 }
 .calc-kredit{
-    display: flex;
     flex-direction: column;
     gap: 2vw;
 }
@@ -177,7 +172,6 @@ hr{opacity: 40%;}
     width: 100%;
 }
 .calc-mebleg{
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -185,7 +179,6 @@ hr{opacity: 40%;}
     background: white;
     color: #6F6F6F;
     padding: 15px;
-    border: 1px solid #6f0bbb64;
     border-radius: 7px;
 }
 .calc-mebleg button{
@@ -197,14 +190,12 @@ hr{opacity: 40%;}
     border: 1px solid #959393c5;
     border-radius: 50%;
 }
-.calc-mebleg p{
-    font-size: .8em;
-}
+.calc-mebleg p{ font-size: .8em }
 .cm-text{
-    display: block; 
+    display: block;
+    width: 70%;
 }
 .cm-number{
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -219,11 +210,10 @@ hr{opacity: 40%;}
     font-size: .8em;
 }
 .myinput {
-    display: none;
     position: absolute;
     border-radius: 8px;
     height: 3px;
-    width: 42vw;
+    width: 47%;
     outline: none;
     -webkit-appearance: none;
 }
@@ -235,16 +225,11 @@ input[type='range']::-webkit-slider-thumb {
     cursor: ew-resize;
     background: #6f0bbb;
 }
-.flex-column{
-    display: flex;
-    flex-direction: column;
-}
+.flex-column{ flex-direction: column}
 .select-part1{
-    display: flex;
     flex-direction: column;
     gap: 5vw;
 }
-.calc-gelir{display: none;}
 .calc-gelir select,.calc-gelir input{
     outline: none;
     font-size: 1.2em;
@@ -253,16 +238,13 @@ input[type='range']::-webkit-slider-thumb {
     padding: 17px 5px;
 }
 .deposit{
-    border: 1px solid #6f0bbb;
     border-radius: 10px;
-    color: #6f0bbb;
     font-size: 1.2em;
     text-align: center;
     padding: 40px 0;
     margin: 20px 0;
 }
 .sifaris-et{
-    background-color: #6f0bbb;
     color: #fff;
     border-radius: 7px;
     padding: 15px 40px;
@@ -277,36 +259,21 @@ input[type='range']::-webkit-slider-thumb {
     background-color: #eff3eee8;
     border-radius: 15px;
 }
-.table table{
-    width: 100%;
-}
+.table table{ width: 100% }
 table td{
     padding: 7.5px 5px 7.5px 0;
     font-size: 20px;
 }
-.table .mezenne{display: none;}
 .rate{ border-right: 1px solid #d0d0d0 }
-.txtcenter{text-align: center;}
-.purpTd{
-    color: #6f0bbb;
-    font-size: .9em;
-}
-.table-head{
-    display: flex;
-    gap: 20px;
-}
+.purpTd{ font-size: .9em }
+.table-head{ gap: 20px }
 .converter{
     padding: 25px 0 0 0;
-    display: flex;
     align-items: center;
     gap: 2vw;
 }
-.converter span{
-    color: #6f0bbb;
-    font-size: 2em;
-}
+.converter span{ font-size: 2em }
 .converter-row{
-    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -328,9 +295,6 @@ table td{
     font-size: 1.1em;
     color: #7e7d7d;
 }
-.sifaris{
-    display: none;
-}
 .sifaris button{
     width: 25px;
     height: 25px;
@@ -339,48 +303,32 @@ table td{
     border: 1px solid #6f6f6f85;
 }
 .sifaris a{color: #000; text-decoration: underline;}
-.bizimteklif-mobil .bt-center{
-    display: block;
-}
+.bizimteklif-mobil .bt-center{ display: block }
 .bizimteklif-mobil .bt-center .div{
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.bizimteklif-mobil .bt-center .div h2{
-    font-size: 1.4em;
-    color: #6f0bbb;
-}
+.bizimteklif-mobil .bt-center .div h2{ font-size: 1.4em }
 .bizimteklif-mobil .bt-center .div span{
     font-size: 1.2em;
     color: #000;
 }
 .bizimteklif{
-    display: none;
     padding: 50px 30px;
     border-radius: 15px;
     border: 1px solid #333;
-    width: 25vw;
 }
 .bt-center{
     margin-top: 35px;
-    display: flex;
     gap: 3.5vw;
 }
-.bt-center span{
-    color: #6F6F6F;
-}
+.bt-center span{ color: #6F6F6F }
 .bt-center h2{
     margin: 10px 0;
     font-size: 1.5em;
 }
-.bizimteklif .btn-sifaris{
-    width: 100%;
-}
-.xeberler{
-    display: flex;
-    gap: 2vw;
-}
+.bizimteklif .btn-sifaris{ width: 100% }
+.xeberler{gap: 2vw}
 .xeber{
     position: relative;
     background: #EFE8E3;
@@ -404,11 +352,7 @@ table td{
     font-size: .9em;
     line-height: 1.3;
 }
-.xeber .cont,  .xeber-none, .butunxeber{
-    display: none;
-}
 #butunxeberoxu{
-    display: flex; 
     justify-content: end;
     margin-right: 80px; 
     color: #000;
@@ -419,24 +363,17 @@ table td{
     font-style: italic;
     margin: 10px 0;
 }
-.xeber p{
-    font-size: .85em;
-}
+.xeber p{ font-size: .85em }
 .xeber div{
     margin-top: 25px;
     transition: .9s;
 }
-.xeber div:hover{
-    margin-left: 50px;
-}
-.butunxeber{
-    height: 170px;
-}
+.xeber div:hover{margin-left: 50px }
+.butunxeber{ height: 170px }
 .userubtn{
     position: fixed;
     bottom: 30px;
     z-index: 999999;
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
@@ -444,17 +381,16 @@ table td{
     border-radius: 50%;
     font-size: 2em;
 }
-.chat{
-    background-color: #6f0bbb;
-    right: 30px;
-}
+.chat{ right: 30px }
 .userway{
     background-color: blue;
     border: 8px double #fff;
     left: 30px;
 }
-.hiddenbars, .desktop-nav, #bok, .ikili-card{display: none;}
-
+.hiddenbars{
+    transition: .8s;
+    transform: translateX(-100%);
+}
 .container{
     max-width: 1200px;
     padding: 0 15px;
@@ -463,11 +399,9 @@ table td{
 .footer-top{
     padding: 20px;
     gap: 4vw;
-    display: flex;
     flex-direction: column;
     background-color: transparent;
 }
-.ft-left .ft-left-top{display: none;}
 .ft-left-top a{
     margin-right: 20px;
     color: #000;
@@ -476,7 +410,6 @@ table td{
 }
 .ft-left-bottom{
     padding-top: 30px;
-    display: flex;
     flex-direction: column;
     gap: 0vw;
 }
@@ -492,26 +425,21 @@ table td{
 }
 .footer-bottom .ft-left-top{padding: 40px 0 15px;}
 .fb-top{
-    display: flex;
     flex-direction: column;
-    gap: 3vw;
     align-items: start;
+    gap: 3vw;
 }
-.fb-top-logos{
-    margin: 15px 0;
-}
+.fb-top-logos{ margin: 15px 0 }
 .fb-top-adress a{
     color: #333;
     margin: 5px 0;
     font-size: .9em;
     display: block;
 }
-.fb-bottom p{
-    font-size: .75em;
-}
+.fb-bottom p{ font-size: .75em }
 /*             D E S K T O P               */
 @media only screen and (min-width: 1200px) {
-    .mobil-nav, #butunxeberoxu{ display: none; }
+    .mobil-nav, #butunxeberoxu,#mezenne{ display: none; }
     .desktop-nav{
         position: absolute;
         background-color: transparent;
@@ -557,14 +485,11 @@ table td{
         font-weight: 700; 
         font-size: .875em;
     }
-    .cards{
-        flex-direction: row;
-    }
+    .cards{ flex-direction: row }
     .cards .card{
         width: 17vw;
         height: 240px;
     }
-    #mezenne{display: none;}
     .table .mezenne{display: initial;}
     .table{width: 100%;}
     .val-calc{height: 100%;}
@@ -575,9 +500,7 @@ table td{
         min-width: 1100px;
         margin: 0 auto;
     }
-    .xeber{
-        width: 250px;
-    }
+    .xeber{ width: 250px }
     .xeber a{
         color: #000;
         font-weight: bolder;
@@ -585,33 +508,20 @@ table td{
         line-height: 1.3;
     }
     .xeber .tarix{
-        display: block;
         font-size: .7em;
         font-style: italic;
         margin: 10px 0;
     }
-    .xeber .cont{
-        font-size: .85em;
-        display: block;
-    }
+    .xeber .cont{ font-size: .85em }
     .xeber div{
         margin-top: 25px;
         transition: .9s;
     }
-    .xeber div:hover{
-        margin-left: 50px;
-    }
-    .xeber-none{display: block;}
-    .butunxeber{
-        height: 170px;
-        display: block;
-    }
-    .fb-top{
-        flex-direction: column;
-    }
-    .footer-bottom{
-        height: 45vh;
-    }
+    .xeber div:hover{ margin-left: 50px }
+    .xeber-none,.butunxeber,.xeber .cont,.xeber .tarix{display: block;}
+    .butunxeber{ height: 170px }
+    .fb-top{ flex-direction: column }
+    .footer-bottom{ height: 45vh }
 }
 @media only screen and (min-width: 768px) {
     #slide2{background: url('../img/s-desk2.png') center/cover; height: 65vh; width: 100%; border-radius: 0;}
@@ -623,10 +533,8 @@ table td{
         left: 200px;
         top: 120px;
     }
-    .slide-content .title{
-        font-size: 2.5em;
-    }
-    .btn-sifaris, .slide-content .subtitle{
+    .slide-content .title{font-size: 2.5em }
+    .btn-sifaris, .slide-content .subtitle,.myinput, .bizimteklif, .calc-mebleg{
         display: block;
     }
     .calc-tab{
@@ -648,26 +556,19 @@ table td{
         color: #fff;
     }
     .calc-tab button p{width: 125px;}
-    .calc-tab #firstbtn{
-        border-radius: 15px 0 0 15px;
-    }
+    .calc-tab #firstbtn{ border-radius: 15px 0 0 15px }
     .calc-tab #secondbtn{
         border-radius: 0 15px 15px 0;
         background-color: #EFEFEF;
         color: #000;
     }
-    .calc-mebleg{
-        display: block;
-        padding: 0 15px;
-    }
-    .calc-mebleg button{
+    .calc-mebleg{ padding: 0 15px }
+    .calc-mebleg button, .bizimteklif-mobil,.fb-top .ft-left-top{
         display: none;
     }
-    .calc-mebleg p{
-        margin: 20px 0;
-    }
-    .myinput{display: block;}
+    .calc-mebleg p{ margin: 20px 0 }
     .cm-text, .cm-number{
+        width: initial;
         display: flex;
         justify-content: space-between ;
         align-items: center;
@@ -677,18 +578,10 @@ table td{
         align-items: center;
         gap: 1vw;
     }
-    .calc-kredit{
-        flex-direction: row;
-    }
+    .calc-kredit{ flex-direction: row }
     .calculator{
         padding: 40px;
         width: 70%;
-    }
-    .bizimteklif{
-        display: block;
-    }
-    .bizimteklif-mobil{
-        display: none;
     }
     .flex-row{
         display: flex;
@@ -703,9 +596,7 @@ table td{
         width: 50%;
         margin: 0;
     }
-    .sifaris-et{
-        margin-top: 20px;
-    }
+    .sifaris-et{margin-top: 20px }
     .ikili-card{
         display: flex;
         gap: 1.5vw;
@@ -719,14 +610,9 @@ table td{
         align-items: center;
         justify-content: center;
     }
-    .ikili-card .card img{
-        max-width: 55%;
-    }
+    .ikili-card .card img{ max-width: 55% }
     .yellow{ background: #EFF6FB;}
-    .black{ 
-        color: #fff;
-        background-image: linear-gradient(90deg, #000000 0%, #88888888 50%);
-    }
+    .black{ color: #fff; background-image: linear-gradient(90deg, #000000 0%, #88888888 50%);}
     .btn-yellow, .btn-black{
         background: #f4c900;
         border-radius: 10px;
@@ -736,14 +622,10 @@ table td{
         color: #fff ;
         background: #000;
     }
-    .xeber{
-        padding: 42px 30px 47px 20px;
-    }
-    .xeber a{
-        font-size: 1.1em;
-    }
+    .xeber{ padding: 42px 30px 47px 20px }
+    .xeber a{ font-size: 1.1em }
     .footer-top{
-        gap: 10vw;
+        gap: 20vw;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -752,7 +634,6 @@ table td{
     }
     .ft-left, .ft-right{max-width: 1200px; margin: 0 auto;}
     .ft-left .ft-left-top{display: block; margin-top: 50px;}
-    .fb-top .ft-left-top{display: none;}
     .ft-left-bottom{
         padding: 30px 0;
         flex-direction: row;
@@ -766,7 +647,5 @@ table td{
         flex-direction: row;
         align-items: center;
     }
-    .fb-top-adress{
-        margin: 60px 0;
-    }
+    .fb-top-adress{ margin: 60px 0}
 }

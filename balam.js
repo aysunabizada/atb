@@ -25,6 +25,7 @@ let flag = false;
 function OpenBars() {
     if (flag == false) {
         hiddenbars.style.display = "block";
+        // hiddenbars.style.transform = "translateX(0)";
         main.style.display = "none";
         footer.style.display = "none";
         fax.style.display = "block";
@@ -32,6 +33,7 @@ function OpenBars() {
         flag = true;
     } else {
         hiddenbars.style.display = "none";
+        // hiddenbars.style.transform = "translateX(-100%)";
         fax.style.display = "none";
         bars.style.display = "block";
         main.style.display = "block";
@@ -56,18 +58,18 @@ sliders.forEach(slider => {
 function activate() {
 
     if (flag == false) {
-        // calcgelir.style.display = "block";
-        // calckredit.style.display = "none";
-        // calch2.style.display = "none";
+        calcgelir.style.display = "block";
+        calckredit.style.display = "none";
+        calch2.style.display = "none";
         secondbtn.style.background = "#6f0bbb" 
         secondbtn.style.color = "#fff" 
         firstbtn.style.background = "#EFEFEF" 
         firstbtn.style.color = "#000" 
         flag = true;
     } else {
-        // calcgelir.style.display = "none";
-        // calckredit.style.display = "flex";
-        // calch2.style.display = "block";
+        calcgelir.style.display = "none";
+        calckredit.style.display = "flex";
+        calch2.style.display = "block";
         secondbtn.style.background = "#EFEFEF" 
         secondbtn.style.color = "#000" 
         firstbtn.style.background = "#6f0bbb"
@@ -115,7 +117,8 @@ function plus(arg) {
     cavab.innerHTML = result.toFixed(0) + ' ₼'
     cavab1.innerHTML = result.toFixed(0) + ' ₼'
 }
-const select1 = document.querySelector("#sel1");
+
+const select1 = document.querySelector("#select1");
 const sel2 = document.querySelector("#sel2");
 const inp1 = document.querySelector("#inp1");
 const inp2 = document.querySelector("#inp2");
@@ -146,43 +149,4 @@ function val() {
         }
     }
     inp2.innerHTML = kod;
-    console.log(inp1.value);
-
 }
-
-
-// const sel1 = document.querySelector("#sel1");
-// const sel2 = document.querySelector("#sel2");
-// const inp1 = document.querySelector("#inp1");
-// const inp2 = document.querySelector("#inp2");
-
-// function valCalc() {
-//     let kod = '';
-//     if (sel1.value == 'EUR') {
-//         if (sel2.value == 'GBP') {
-//             kod = (inp1.value * 0.8346).toFixed(2);
-//         } else if (sel2.value == 'EUR') {
-//             kod = inp1.value;
-//         }else{
-//             kod  = (inp1.value * 1.8120).toFixed(2);
-//         }
-//     } 
-//     else if (sel1.value == 'AZN') {
-//         if (sel2.value == 'EUR') {
-//           kod = (inp1.value * 0.5402).toFixed(2);
-//         } else if (sel2.value == 'AZN') {
-//             kod = inp1.value ;
-//         }
-//     }
-//     else if(sel1.value == 'GBP'){
-//         if (sel2.value == 'AZN') {
-//             kod = (inp1.value * 2.1110).toFixed(2);
-//         }else if(sel2.value == 'EUR'){
-//             kod = (inp1.value * 1.1405).toFixed(2);
-//         }else{
-//             kod = inp1.value ;
-//         }
-//     }
-//     inp2.innerHTML = kod
-// }
-
