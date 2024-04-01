@@ -9,8 +9,8 @@ const ay = document.querySelector("#ay");
 const ayvalue = document.querySelector("#ayvalue");
 const cavab = document.querySelector(".cavab");
 const cavab1 = document.querySelector(".cavab1");
-const faiz = document.querySelector("#faiz");
-const faiz1 = document.querySelector("#faiz1");
+const faiz = document.querySelector("#faiz-mobile");
+const faiz1 = document.querySelector("#faiz-desktop");
 // const sliders = document.querySelectorAll(".myinput");
 const calckredit = document.querySelector(".calc-kredit");
 const calch2 = document.querySelector(".calc-h2");
@@ -62,7 +62,9 @@ function OpenBars() {
 //     this.style.background = `linear-gradient(to right, #6f0bbb 0%, #6f0bbb ${(this.value - this.min) / (this.max - this.min) * 100}%, transparent ${(this.value - this.min) / (this.max - this.min) * 100}%, transparent 100%)`;
 // };
 
-//buttonlarin activate-i
+
+
+// buttonlarin activate-i
 function activate() {
     if (flag == false){
         calcgelir.style.display = "block";
@@ -153,14 +155,15 @@ function activate() {
 //                             <div class="btn-sifaris bgpurple btns2">sifariş</div>
 //                         </div>`
 //     } else if ( arg ==  2){
+//         const salam = document.querySelector("#salam")
 //         console.log('mimiiiii');
-//         secondbtn.style.background = "#6f0bbb";
-//         calch2.style.display = "none";
-//         secondbtn.style.color = "#fff" ;
-//         firstbtn.style.background = "#EFEFEF"; 
-//         firstbtn.style.color = "#000" ;
+        // secondbtn.style.background = "#6f0bbb";
+        // calch2.style.display = "none";
+        // secondbtn.style.color = "#fff" ;
+        // firstbtn.style.background = "#EFEFEF"; 
+        // firstbtn.style.color = "#000" ;
 //         calckredit.innerHTML = ' '
-//         calcgelir.innerHTML = `
+//         salam.innerHTML = `
 //                     <h2 class="p50">əmanət üzrə gəliri hesablayın</h2>
 //                     <div class="table flex-column">
 //                         <div class="flex-row">
@@ -194,9 +197,10 @@ function activate() {
 //                     </div>`
 //     }
 // }
+
 // activate(1);
 
-//accordionlari acir
+//accordionlar
 var acc = document.getElementsByClassName("accordion");
     var i;
     for (i = 0; i < acc.length; i++) {
@@ -211,12 +215,30 @@ var acc = document.getElementsByClassName("accordion");
         });
     }
 
+// nagd krediti hesablayan
+let faiz0 = 11; 
 function calc() {
     pricevalue.innerHTML = price.value;
-    ayvalue.innerHTML = ay.value;
-    plus()
+    // ayvalue.innerHTML = ay.value;
+    
+
+    if (ay.value == 13) faiz0 += 2
+    else if (ay.value == 24) faiz0 =  14;
+    else if (ay.value == 36) faiz0= 15;
+    else if (ay.value == 48) faiz0 = 16;
+    else if (ay.value < 13) faiz0 = 11;
+    faiz1.innerHTML = faiz0 + '%';
+    let i = +price.value / +ay.value;
+    const result = i + ((i * percent) / 100);
+
+    ayvalue.innerHTML = ay.value + ' ay';
+    pricevalue.innerHTML = price.value + ' AZN';
+    cavab1.innerHTML = result.toFixed(0) + ' ₼'
+    plus(arg)
 }
+
 function plus(arg) {
+    // let faiz0 = 11; 
     if (arg == 0){
         price.value = +price.value - 100;
         pricevalue.innerHTML = price.value + ' AZN';
@@ -230,21 +252,52 @@ function plus(arg) {
         ay.value = +ay.value + 1;
         ayvalue.innerHTML = ay.value + ' ay';
     }
+
+    if (ay.value == 13) faiz0 += 2
+    else if (ay.value == 24) faiz0 =  14;
+    else if (ay.value == 36) faiz0= 15;
+    else if (ay.value == 48) faiz0 = 16;
+    else if (ay.value < 13) faiz0 = 11;
+    faiz.innerHTML = faiz0 + '%';
+
     let i = +price.value / +ay.value;
     const result = i + ((i * percent) / 100);
     cavab.innerHTML = result.toFixed(0) + ' ₼'
-    cavab1.innerHTML = result.toFixed(0) + ' ₼'
-
-    if (ay.value == 11) {
-        faiz.innerHTML = "11%";
-        faiz1.innerHTML = "11%";
-    } else if (ay.value == 12 || ay.value == 24 || ay.value == 36) {
-        faiz.innerHTML = parseInt(faiz.innerHTML) + 2 + "%";
-        faiz1.innerHTML = parseInt(faiz1.innerHTML) + 2 + "%";
-    }
-
 }
 
+// emanet uzre geliri hesablayan
+const slcval = document.querySelector("#slcval");
+const slcmuddet = document.querySelector("#slcmuddet");
+const slcode = document.querySelector("#slcode");
+const slcinp = document.querySelector("#slcinp");
+const ayliq = document.querySelector("#ayliq");
+const faizlik = document.querySelector("#faizlik");
+
+function ayliqHesabla(){
+    let faiz = 0;
+    let ay = '';
+    let valyutaName = 'AZN';
+    if (slcval.value == 'AZN') {
+        valyutaName = ' AZN'
+        if (slcmuddet.value == '12' && slcode.value == 0) faiz = 5.5
+        else if (slcmuddet.value == '12' && slcode.value == 1) faiz = 5
+        else if (slcmuddet.value == '24' && slcode.value == 0) faiz = 6.5
+        else if (slcmuddet.value == '24' && slcode.value == 1) faiz = 6 
+        else if (slcmuddet.value == '36' && slcode.value == 0) faiz = 9 
+        else if (slcmuddet.value == '36' && slcode.value == 1) faiz = 8 
+        ay = +slcinp.value * faiz 
+    } 
+    else if (slcval.value == 'USD') {
+        valyutaName = ' USD'
+        if (slcmuddet.value == '12' && slcode.value == 0) faiz = 0.1
+        ay = +slcinp.value * faiz
+    } 
+    faizlik.innerHTML = faiz + '%' + '-';
+    ayliq.innerHTML = ay + valyutaName
+}
+
+
+// valyuta kalkulyatoru
 const select1 = document.querySelector("#select1");
 const sel2 = document.querySelector("#sel2");
 const inp1 = document.querySelector("#inp1");
@@ -267,31 +320,4 @@ function val() {
         else kod = inp1.value;
     }
     inp2.innerHTML = kod;
-}
-
-const slcval = document.querySelector("#slcval");
-const slcmuddet = document.querySelector("#slcmuddet");
-const slcode = document.querySelector("#slcode");
-const slcinp = document.querySelector("#slcinp");
-const ayliq = document.querySelector("#ayliq");
-const faizlik = document.querySelector("#faizlik");
-
-function ayliqHesabla(){
-    let faiz = '';
-    let ay = '';
-    if (slcval.value == 'AZN') {
-        if (slcmuddet.value == '12' && slcode.value == 0) faiz = 5.5
-        else if (slcmuddet.value == '12' && slcode.value == 1) faiz = 5
-        else if (slcmuddet.value == '24' && slcode.value == 0) faiz = 6.5
-        else if (slcmuddet.value == '24' && slcode.value == 1) faiz = 6 
-        else if (slcmuddet.value == '36' && slcode.value == 0) faiz = 9 
-        else if (slcmuddet.value == '36' && slcode.value == 1) faiz = 8 
-        ay = +slcinp.value * faiz + ' AZN'
-    } 
-    else if (slcval.value == 'USD') {
-        if (slcmuddet.value == '12' && slcode.value == 0) faiz = 0.1
-        ay = +slcinp.value * faiz + '  USD'
-    } 
-    faizlik.innerHTML = faiz;
-    ayliq.innerHTML = ay;
 }

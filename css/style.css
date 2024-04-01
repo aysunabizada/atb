@@ -554,6 +554,7 @@ table td{
         gap: 1vw;
         padding: 20px;
         color: #fff;
+        transition: .5s;
     }
     .calc-tab button p{width: 125px;}
     .calc-tab #firstbtn{ border-radius: 15px 0 0 15px }
