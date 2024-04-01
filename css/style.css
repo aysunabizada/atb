@@ -387,10 +387,10 @@ table td{
     border: 8px double #fff;
     left: 30px;
 }
-.hiddenbars{
+/* .hiddenbars{
     transition: .8s;
     transform: translateX(-100%);
-}
+} */
 .container{
     max-width: 1200px;
     padding: 0 15px;
