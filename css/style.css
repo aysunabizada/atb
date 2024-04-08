@@ -9,7 +9,6 @@ body{
 .p50{padding: 50px 0;}
 .txtcenter{text-align: center;}
 
-
 .mobil-nav, .nav-links,.nav-links a, #az,.links, .socialmedia,.cards, .cards-top, .cards-bottom, .calc-tab,
 .calc-tab button,.calc-kredit, .calc-mebleg, .cm-number, .flex-column, .select-part1, .table-head, .converter,
 .converter-row, .bizimteklif-mobil .bt-center .div, .bt-center, .xeberler,#butunxeberoxu, .userubtn, .footer-top,
@@ -64,6 +63,12 @@ body{
     width: 100%;
 }
 .aktiv{ color: #fff !important;}
+.swiper-pagination-bullet-active {
+    background-color: #6f0bbb !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+    transition: .8s;
+}
 .accordion {
     background-color: transparent;
     color: #333;
